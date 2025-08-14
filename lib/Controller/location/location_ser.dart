@@ -1,7 +1,8 @@
 import 'dart:async';
 import 'package:geolocator/geolocator.dart';
 
-import '../data_base/app_db.dart';
+import '../../Model/data_base/app_db.dart';
+
 
 
 class LocationService {

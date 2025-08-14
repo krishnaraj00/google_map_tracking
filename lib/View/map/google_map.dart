@@ -1,7 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:google_maps_flutter/google_maps_flutter.dart';
 
-import '../data_base/app_db.dart';
+import '../../Model/data_base/app_db.dart';
+
 
 
 class GoogleMapWidget extends StatelessWidget {

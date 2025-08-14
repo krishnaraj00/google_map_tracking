@@ -1,12 +1,15 @@
+
+
 import 'package:drift_flutter/drift_flutter.dart';
+import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
-import 'package:project/permissions/google_map_per.dart';
-import 'package:project/permissions/location_his.dart';
 import 'package:uuid/uuid.dart';
 
-import 'data_base/app_db.dart';
-import 'location/location_ser.dart';
-import 'map/google_map.dart';
+import 'Controller/location/location_ser.dart';
+import 'Controller/permissions/google_map_per.dart';
+import 'Controller/permissions/location_his.dart';
+import 'Model/data_base/app_db.dart';
+import 'View/map/google_map.dart';
 
 void main() async {
   WidgetsFlutterBinding.ensureInitialized();

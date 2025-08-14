@@ -1,7 +1,9 @@
 import 'package:flutter/material.dart';
 import 'package:drift_flutter/drift_flutter.dart';
-import '../data_base/app_db.dart';
-import '../map/google_map.dart';
+
+import '../../Model/data_base/app_db.dart';
+import '../../View/map/google_map.dart';
+
 
 class LocationHistoryScreen extends StatefulWidget {
   final AppDatabase database;

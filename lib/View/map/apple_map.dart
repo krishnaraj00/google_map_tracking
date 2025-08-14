@@ -1,10 +1,12 @@
+
+
+import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 
-import '../data_base/app_db.dart';
-
+import '../../Model/data_base/app_db.dart';
 
 class AppleMapWidget extends StatelessWidget {
-  final Stream<List<n LocationPoint>> pointsStream;
+  final Stream<List<LocationPoint>> pointsStream;
 
   const AppleMapWidget({super.key, required this.pointsStream});
 
@@ -61,7 +63,8 @@ class AppleMapWidget extends StatelessWidget {
                         ),
                       ),
                       subtitle: Text(
-                        'Lat: ${point.latitude.toStringAsFixed(6)}\nLng: ${point.longitude.toStringAsFixed(6)}',
+                        'Lat: ${point.latitude.toStringAsFixed(6)}\n'
+                            'Lng: ${point.longitude.toStringAsFixed(6)}',
                       ),
                       trailing: Text(
                         '${point.timestamp.hour}:${point.timestamp.minute.toString().padLeft(2, '0')}',
@@ -78,4 +81,3 @@ class AppleMapWidget extends StatelessWidget {
     );
   }
 }
-//apple_map_widget.dart
